@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "--std=c++14",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/a.out"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
